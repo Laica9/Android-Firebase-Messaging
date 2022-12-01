@@ -36,7 +36,7 @@ android {
 
             // TODO(developer): Replace this with your Dynamic Links URI prefix
             //                  See: https://firebase.google.com/docs/dynamic-links/android/create#set-up-firebase-and-the-dynamic-links-sdk
-            resValue "string", "dynamic_links_uri_prefix", "https://YOUR_APP.page.link"
+            resValue "string", "https://quickstarttest.page.link", "https://quickstarttest.page.link"
         }
     }
 
@@ -54,6 +54,10 @@ dependencies {
     // Import the Firebase BoM (see: https://firebase.google.com/docs/android/learn-more#bom)
     implementation platform('com.google.firebase:firebase-bom:31.1.0')
 
+    // Declaring dependencies  for the Firebase products
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-auth'
+
     // Firebase Dynamic Links (Java)
     implementation 'com.google.firebase:firebase-dynamic-links'
 
@@ -63,6 +67,7 @@ dependencies {
     // For an optimal experience using Dynamic Links, add the Firebase SDK
     // for Google Analytics. This is recommended, but not required.
     implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
 
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
     androidTestImplementation 'androidx.test:rules:1.5.0'
