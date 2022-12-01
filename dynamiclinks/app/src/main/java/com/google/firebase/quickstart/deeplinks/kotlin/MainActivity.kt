@@ -153,7 +153,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun validateAppCode() {
         val uriPrefix = getString(R.string.dynamic_links_uri_prefix)
-        if (uriPrefix.contains("YOUR_APP")) {
+        if (uriPrefix.contains("quickstarttest")) {
             AlertDialog.Builder(this)
                     .setTitle("Invalid Configuration")
                     .setMessage("Please set your Dynamic Links domain in app/build.gradle")
